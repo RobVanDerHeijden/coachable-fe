@@ -17,7 +17,7 @@ function HomePage() {
           <p className="legend">Welcome to Coachable</p>
           <img
             src={CoachableLogo}
-            width="150"
+            width="100"
             className="d-inline-block align-top"
             alt="Coachable logo"
           />

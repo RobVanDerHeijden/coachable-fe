@@ -4,13 +4,11 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import React from "react";
 import { Navbar } from "react-bootstrap";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import CoachableLogo from "../assets/imgs/logo-controller.png";
 
 function NavBar() {
-  const navigate = useNavigate();
-
   const links = [
     {
       id: 1,

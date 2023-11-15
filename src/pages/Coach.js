@@ -1,11 +1,8 @@
 import Button from "@mui/material/Button";
 import React from "react";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Coach = (props) => {
-  const { id } = useParams();
-  let navigate = useNavigate();
-
   return (
     <div>
       <h1>Edit Coach</h1>

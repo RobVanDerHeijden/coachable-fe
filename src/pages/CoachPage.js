@@ -1,13 +1,10 @@
-import { useNavigate } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import Album from "../components/Album";
-import { CoachAPI } from "../apis/CoachAPI";
 
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 
 function CoachPage() {
-  const navigate = useNavigate();
   const [coaches, setCoaches] = useState([]);
 
   // useEffect(() => {
@@ -16,14 +13,13 @@ function CoachPage() {
   //   });
   // }, []);
 
-  const newCoaches = [
-    { id: 1, name: "Pam", genre: "BRONZE" },
-    { id: 2, name: "Bobby", genre: "SILVER" },
-    { id: 3, name: "Mike", genre: "GOLD" },
-    { id: 4, name: "Jim", genre: "BRONZE" },
-  ];
-
   useEffect(() => {
+    const newCoaches = [
+      { id: 1, name: "Pam", genre: "BRONZE" },
+      { id: 2, name: "Bobby", genre: "SILVER" },
+      { id: 3, name: "Mike", genre: "GOLD" },
+      { id: 4, name: "Jim", genre: "BRONZE" },
+    ];
     setCoaches(newCoaches);
   }, []);
 

@@ -1,11 +1,9 @@
-import "./App.css";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
-import HomePage from "./pages/HomePage.js";
-import Coach from "./pages/Coach.js";
-import CoachPage from "./pages/CoachPage.js";
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
+import CoachPage from "./pages/CoachPage.js";
+import HomePage from "./pages/HomePage.js";
 
 function App() {
   return (
